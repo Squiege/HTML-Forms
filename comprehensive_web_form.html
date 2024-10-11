@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+</head>
+<body>
+    <!-- Task 1 -->
+    <form action="/submit">
+        <label for="fav_language">Favorite Programming Language:</label>
+        <select name="fav_language" id="fav_language">
+            <option value="python">Python</option>
+            <option value="sql">SQL</option>
+            <option value="react">React</option>
+            <option value="c++">C++</option>
+        </select>
+
+        <label for="platforms">Select your favorite platform:</label>
+        <input type="checkbox" name="platforms" id="web">
+        <label for="web">Web</label>
+        <input type="checkbox" name="platforms" id="mobile">
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" name="platforms" id="desktop">
+        <label for="desktop">Desktop</label>
+    </form>
+
+    <form action="/submit">
+        <label for="expertise">Experience Level:</label>
+        <div aria-labelledby="expertise">
+            Select expertise from the following options
+        </div>
+        <input type="radio" id="beginner" name="expertise" value="beginner">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="expertise" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="advanced" name="expertise" value="advanced">
+        <label for="advanced">Advanced</label>
+    </form>
+
+    <!-- Task 1 -->
+    <button aria-label="Close">X</button>
+</body>
+</html>
